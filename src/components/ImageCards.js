@@ -1,17 +1,14 @@
 import React from 'react';
-import {useState} from 'react';
-import {useEfect} from 'react';
-import axios from 'react';
 
-const DataRequest = ()=> {
-    //const [dataImg, setDataImg] = useState();
-    //useEfect(()=> {
-        axios.get(`https://api.nasa.gov/EPIC/api/natural?api_key=DEMO_KEY`)
-        .then(nasaImages=> {
-         const images = nasaImages.data.image;
-         setDataImg(nasaImages)
-        //})
-    }, dataImg[nasaImages])
+const DataRequest = (props)=> {
+    
+    //Within the deconstructor there are a change state and state.
+    //dataImage at 0 index is state, first state and setDataImg will set the state.
+        return(
+        <>
+        <img className='position' src = {props.imageurl} alt = 'logo of nasa' />
+        </>
+           ); 
 }
-console.log(dataImg)
+
 export default DataRequest;

@@ -1,9 +1,11 @@
 import React from 'react';
-import Img from './20-208028_nasa-logo-white-png.png';
-const Image = ()=> {
+import Img from './nasalogo.png';
+const Image = (props)=> {
     const img = Img;
-    return <>
+    return(
+    <>
     <img src = {img} alt = 'logo of nasa' />
-    </>
+   </>); 
+
 }
 export default Image
